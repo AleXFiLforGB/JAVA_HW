@@ -1,5 +1,3 @@
-package HW5;
-
 import java.util.*;
 
 //2 .
