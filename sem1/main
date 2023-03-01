@@ -1,0 +1,23 @@
+package sem1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат,
+// содержащий в себе методы initProducts (List <Product>) сохраняющий в себе список исходных продуктов и getProduct(String name)
+//Реализовать конструкторы, get/set методы, построить логику ТорговогоАвтомата на основе кода сделанного в задании 1.2
+// Сделать класс Товар абстрактным, создать нескольких наследников (к примеру: БутылкаВоды),
+// сделать интерфейсом ТорговыйАвтомат и реализовать класс какого-то одного типа ТорговогоАвтомата (пример: ПродающийБутылкиВодыАвтомат
+public class main {
+    public static void main(String[] args) {
+        List <Product> mainGoods = new ArrayList<>();
+        Product cola = new Product("Cola", 23);
+        Product mars = new Product("Mars", 24);
+        mainGoods.add(cola);
+        mainGoods.add(mars);
+        VendingMachine inVendingMachine = new VendingMachine();
+
+        inVendingMachine.initProducts(mainGoods);
+        inVendingMachine.getGoods();
+    }
+}
