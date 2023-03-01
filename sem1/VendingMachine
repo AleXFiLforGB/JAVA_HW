@@ -1,0 +1,27 @@
+package sem1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class VendingMachine {
+    private List<Product> goods = new ArrayList<>();
+
+    public void initProducts (List <Product> products) {
+        for (Product item: products) {
+            goods.add(item);
+        }
+    }
+
+    public List<Product> getGoods(){
+        return goods;
+    }
+//    public int getProduct(String name) {
+//        for(Product item: goods) {
+//            if (item.getName().equals(name)) {
+//                return item.getCost();
+//            }
+//        }
+//    }
+
+
+}
