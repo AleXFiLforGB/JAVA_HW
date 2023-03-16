@@ -1,4 +1,4 @@
-package homework5.FactoryPatternSample;
+package HW5.FactoryPatternSample;
 
 public interface DoughnutInterface {
     void eat();
